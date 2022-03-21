@@ -5,7 +5,7 @@ import Stack from './Stack';
 export default function () {
   return (
     <NavigationContainer>
-      <Stack></Stack>
+      <Stack />
     </NavigationContainer>
   );
 }
