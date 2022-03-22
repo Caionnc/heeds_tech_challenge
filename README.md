@@ -15,15 +15,14 @@
 
 App Image(Waiting)
 
-Welcome to your Map Marker!  
-
+Welcome to your Map Marker!
 
 ### Built Using
 
-- [React Native](https://reactjs.org/) `:heavy_check_mark:`
-- [Styled Components](https://styled-components.com/)  <b>In development</b> `:x:`
-- [React Redux](https://redux.js.org/) `:heavy_check_mark:`
-- [Typescript](https://www.typescriptlang.org/) `:heavy_check_mark:`
+- [React Native](https://reactjs.org/) :heavy_check_mark:
+- [Styled Components](https://styled-components.com/) <b><i>( Under development )</i></b> :x:
+- [React Redux](https://redux.js.org/) :heavy_check_mark:
+- [Typescript](https://www.typescriptlang.org/) :heavy_check_mark:
 
 <!-- GETTING STARTED -->
 
@@ -45,10 +44,11 @@ To get a local copy up and running follow these simple example steps.
    git clone https://github.com/Caionnc/heeds_tech_challenge.git
    ```
 2. Install NPM packages
+
    ```sh
    npm install
    ```
-(`yarn` should work fine too, I used `npm` in these instructions because `yarn`'s installation instructions seemed more complicated than `npm`'s)
+
+   (`yarn` should work fine too, I used `npm` in these instructions because `yarn`'s installation instructions seemed more complicated than `npm`'s)
 
 3. Try it out!
-
