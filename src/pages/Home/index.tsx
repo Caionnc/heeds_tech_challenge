@@ -1,5 +1,5 @@
 import {useNavigation} from '@react-navigation/native';
-import React, {useState} from 'react';
+import React from 'react';
 import {
   View,
   StyleSheet,
@@ -39,14 +39,8 @@ const Home = () => {
           />
         ))}
       </MapView>
-      <TouchableOpacity
-        onPress={pushCreateStore}
-        style={{
-          backgroundColor: 'black',
-          marginBottom: 120,
-          padding: 16,
-        }}>
-        <Text style={{color: 'white'}}>Cadastrar</Text>
+      <TouchableOpacity onPress={pushCreateStore} style={styles.markButton}>
+        <Text style={styles.textButton}>Mark-Up</Text>
       </TouchableOpacity>
     </View>
   );
@@ -60,10 +54,24 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     alignItems: 'center',
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
+    width: 500,
+    height: 500,
+    //width: Dimensions.get('window').width,
+    //height: Dimensions.get('window').height,
   },
   map: {
     ...StyleSheet.absoluteFillObject,
+  },
+  markButton: {
+    borderRadius: 15,
+    color: 'white',
+    backgroundColor: '#dc4b3e',
+    marginBottom: 120,
+    padding: 16,
+  },
+  textButton: {
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: 'white',
   },
 });
