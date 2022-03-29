@@ -10,28 +10,66 @@ import {
 import {useStores} from '../../contexts/use-store';
 
 const CreateStore = () => {
-  const [text, onChangeText] = useState('');
+  const [text, setOnChangeText] = useState('');
+  const [latitude, setOnChangeLatitude] = useState('');
+  const [longitude, setOnChangeLongitude] = useState('');
+  const [description, setOnChangeDescription] = useState('');
+
   const {pushStore} = useStores();
   const navigation = useNavigation();
 
   const pushStoreMarker = () => {
     pushStore({
       latlng: {
-        latitude: -7.115,
-        longitude: -34.86306,
+        latitude: Number(latitude),
+        longitude: Number(longitude),
       },
       title: text,
-      description: 'Available Restaurant',
+      description: description,
     });
     navigation.goBack();
   };
 
+  /*const castLatAndLong = () => {
+    setOnChangeLatitude(latitude);
+    setOnChangeLongitude(longitude);
+  };*/
+
+  // const handleChangeTextToNumberLat = () => {
+  //   let auxLat = latitude;
+  //   setOnChangeLatitude(String(auxLat));
+  // };
+
+  // const handleChangeTextToNumberLong = () => {
+  //   let newTextInputValue = '***' + text;
+  //   this.setState({
+  //     textInputValue: String(newTextInputValue),
+  //   });
+  // };
+
   return (
     <View style={styles.container}>
       <TextInput
-        onChangeText={onChangeText}
+        onChangeText={setOnChangeText}
         value={text}
         placeholder="Restaurant's Name"
+      />
+      <TextInput
+        onChangeText={setOnChangeLatitude}
+        keyboardType="numeric"
+        value={latitude}
+        placeholder="Latitude"
+      />
+      <TextInput
+        onChangeText={setOnChangeLongitude}
+        keyboardType="numeric"
+        value={longitude}
+        placeholder="Longitude"
+      />
+      <TextInput
+        onChangeText={setOnChangeDescription}
+        value={description}
+        placeholder="Restaurant's Description"
       />
       <TouchableOpacity
         onPress={pushStoreMarker}
@@ -65,6 +103,6 @@ const styles = StyleSheet.create({
   textButton: {
     fontSize: 10,
     fontWeight: 'bold',
-    color: 'black',
+    color: 'white',
   },
 });

@@ -54,10 +54,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     alignItems: 'center',
-    width: 500,
-    height: 500,
-    //width: Dimensions.get('window').width,
-    //height: Dimensions.get('window').height,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
   },
   map: {
     ...StyleSheet.absoluteFillObject,
