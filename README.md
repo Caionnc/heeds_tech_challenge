@@ -13,14 +13,11 @@
 
 ## About The Project
 
-App Image(Waiting)
-
 Welcome to your Map Marker!
 
-  <img src="src/assets/images/homePage.jpeg" alt="HomePage" width="300" height="300">
-  <img src="src/assets/images/createStore.jpeg" alt="Logo" width="300" height="300">
-  <img src="src/assets/images/restaurantMarker.jpeg" alt="Logo" width="300" height="300">
-
+  <img src="src/assets/images/homePage.jpeg" alt="HomePage">
+  <img src="src/assets/images/createStore.jpeg" alt="Logo">
+  <img src="src/assets/images/restaurantMarker.jpeg" alt="Logo">
 
 ### Built Using
 
