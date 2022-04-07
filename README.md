@@ -17,11 +17,17 @@ App Image(Waiting)
 
 Welcome to your Map Marker!
 
+  <img src="src/assets/images/homePage.jpeg" alt="HomePage" width="80" height="80">
+  <img src="src/assets/images/createStore.jpeg" alt="Logo" width="80" height="80">
+  <img src="src/assets/images/restaurantMarker.jpeg" alt="Logo" width="80" height="80">
+
+
 ### Built Using
 
 - [React Native](https://reactjs.org/) :heavy_check_mark:
 - [Styled Components](https://styled-components.com/) <b><i>( Under development )</i></b> :x:
-- [React Redux](https://redux.js.org/) :heavy_check_mark:
+- [React Redux](https://redux.js.org/) :x:
+- [React useContext](https://pt-br.reactjs.org/docs/hooks-reference.html) :heavy_check_mark:
 - [Typescript](https://www.typescriptlang.org/) :heavy_check_mark:
 
 <!-- GETTING STARTED -->
